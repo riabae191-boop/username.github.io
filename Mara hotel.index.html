@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Hotel</title>
+    <style>
+        /* Global Reset & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #0f172a; /* Luxury Dark Navy */
+            color: #f59e0b; /* Elegant Gold */
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header h3 {
+            color: #e2e8f0;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Navigation */
+        nav {
+            background-color: #1e293b;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #334155;
+            color: #f59e0b;
+        }
+
+        /* Layout Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f59e0b;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Images styling */
+        .hotel-img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        /* Services List */
+        ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        ul li {
+            background: #fff;
+            padding: 15px;
+            border-left: 4px solid #f59e0b;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-weight: 500;
+        }
+
+        /* Modernized Forms */
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            background-color: #f8fafc;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #f59e0b;
+            background-color: #fff;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #0f172a;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #1e293b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        /* Media Query for Mobile screens */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-direction: column; }
+            nav a { text-align: center; padding: 12px; border-bottom: 1px solid #334155; }
+            section { padding: 25px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MARA HOTEL</h1>
+        <h3>Luxury, Comfort and Excellence</h3>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book Now</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <img src="images/imag1.jpg" alt="Mara Hotel Exterior" class="hotel-img">
+        <h2>Welcome to Mara Hotel</h2>
+        <p>Mara Hotel is a luxurious five-star hotel offering world-class accommodation, delicious meals, conference facilities and exceptional customer service.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Mara Hotel provides luxury rooms, swimming pools, conference halls, airport pickup services and fine dining experiences.</p>
+        <img src="images/imag2.jpg" alt="Mara Hotel Interior" class="hotel-img">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Luxury Accommodation</li>
+            <li>Conference Facilities</li>
+            <li>Restaurant and Bar</li>
+            <li>Swimming Pool</li>
+            <li>Free Wi-Fi</li>
+            <li>Airport Transport</li>
+        </ul>
+    </section>
+
+    <section id="booking">
+        <h2>Online Booking Form</h2>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" required>
+
+            <label for="roomtype">Room Type</label>
+            <select id="roomtype">
+                <option>Single Room</option>
+                <option>Double Room</option>
+                <option>Executive Suite</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="feedback">
+        <img src="images/imag3.jpg" alt="Mara Hotel Amenities" class="hotel-img">
+        <h2>Customer Feedback</h2>
+        <form>
+            <label for="feedname">Your Name</label>
+            <input type="text" id="feedname">
+
+            <label for="rating">Rate Our Services</label>
+            <select id="rating">
+                <option>Excellent</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Fair</option>
+                <option>Poor</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="5"></textarea>
+
+            <button type="submit">Send Feedback</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> info@marahotel.com</p>
+        <p><strong>Phone:</strong> +256 700 123456</p>
+        <p><strong>Location:</strong> Kampala, Uganda</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mara Hotel. Enjoy your stay.</p>
+    </footer>
+
+</body>
+</html>
